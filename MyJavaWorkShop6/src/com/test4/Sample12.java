@@ -14,7 +14,7 @@ class B2 extends A2 {
 	B2() {
 		super(10);
 		System.out.println("B default Constuctor");
-	}
+		}
 }
 public class Sample12 {
 

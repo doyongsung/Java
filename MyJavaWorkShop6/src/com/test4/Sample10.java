@@ -43,7 +43,7 @@ public class Sample10 {
 				db = new MySql();
 				break;
 			case "SqlServer" :
-				db = new SqlServer();
+ 			db = new SqlServer();
 				break;
 		}
 		return db;

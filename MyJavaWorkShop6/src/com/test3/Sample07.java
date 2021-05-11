@@ -20,9 +20,7 @@ class BlackDog extends Dog {
 		
 	}
 	
-}
-
-
+	}
 public class Sample07 {
 	static Animal test(Animal a) {
 		Animal a2 = null;
@@ -57,7 +55,7 @@ public class Sample07 {
 		Animal obj = new BlackDog();
 		Animal obj3 = new Dog();
 		Animal obj5 = test(new BlackDog());
-		Animal obj6 = test(new Dog());
+     	Animal obj6 = test(new Dog());
 		
 		
 		
