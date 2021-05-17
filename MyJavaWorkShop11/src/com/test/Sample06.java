@@ -1,0 +1,21 @@
+package com.test;
+
+import com.sun.jdi.Method;
+
+class MyClass {
+	String name;
+	void myMethod() {}
+}
+public class Sample06 {
+	public static void main(String[] args) {
+		MyClass obj = new MyClass();
+		Class c = obj.getClass();
+		System.out.println(c.getName() + ", " + c.getSimpleName());
+		java.lang.reflect.Method[] methods = c.getMethods();
+		for(int inx = 0; inx < methods.length; inx++) {
+			System.out.println(methods[inx].getName());
+		}
+	
+
+	}
+}
