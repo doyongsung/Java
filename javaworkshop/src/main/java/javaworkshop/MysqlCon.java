@@ -1,5 +1,6 @@
 package javaworkshop;
 
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.*;
@@ -47,7 +48,8 @@ public class MysqlCon {
                 emps.add(new Employee(rs.getInt(1), rs.getString(2), rs.getString(3)));
             }
             con.close();
-        }catch(Exception e){ System.out.println(e);
+        }catch(Exception e)
+        { System.out.println(e);
         }
         System.out.println(emps.size());
         for (Employee emp : emps) {
